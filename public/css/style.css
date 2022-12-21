@@ -1,4 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@700&display=swap'); /* FONT FAMILY TITRE */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+  --color-primary: #6B3329;
+  --color-grey : #D7DDFA;
+  --color-teal : #156173;
+  --color-orangee : #b8832c;
+  --font-family-title: 'IBM Plex Mono', monospace;
+}
+
+/* RESET DU BODY  */
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2 {
+  font-family: var(--font-family-title);
+  font-weight: 700;
+}
+
+/* LOGO  */
+#boxLogo {
+  margin: 0;
+  background-color: var(--color-grey);
+  margin-left: 2rem;
+}
+
+#logo {
+  width: 125px;
+}
+
+/* PARTIE BARRE DE NAVIGATION  */
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-primary);
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  margin-right: 3rem;
+}
+
+nav ul li {
+  margin: 1rem;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--color-primary);
+  background-color: var(--color-grey);
+  padding: 0.3rem 0.8rem;
+  border: 1px solid var(--color-grey);
+}
+
+nav ul li a:hover {
+  color: var(--color-grey);
+  background-color: var(--color-orangee);
+}
+
+/* // ZONE DE FLOATAISON */
+#top-page {
+  height: 80vh;
+  background-image: url(/public/img/img_bg1.jpg);
+  background-attachment: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  opacity: 80%;
+}
+
+#top-page h1 {
+  background-color: var(--color-grey);
+  text-align: center;
+  color: var(--color-teal);
+  width: 50%;
+  margin: auto;
 }

@@ -19,6 +19,7 @@ body {
 h1, h2 {
   font-family: var(--font-family-title);
   font-weight: 700;
+  color: var(--color-teal);
 }
 
 /* LOGO  */
@@ -38,6 +39,10 @@ nav {
   justify-content: space-between;
   background-color: var(--color-primary);
   align-items: center;
+  background-image: url(/public/img/Logo\ blanc-02.png);
+  background-size: 6rem, contain;
+  background-position: 9rem;
+  background-repeat: no-repeat;
 }
 
 nav ul {
@@ -68,17 +73,46 @@ nav ul li a:hover {
   height: 80vh;
   background-image: url(/public/img/img_bg1.jpg);
   background-attachment: fixed;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
   opacity: 80%;
+  background-color: var(--color-grey);
+  flex-wrap: wrap;
+}
+
+#top-page #name {
+  color: var(--color-primary);
 }
 
 #top-page h1 {
   background-color: var(--color-grey);
-  text-align: center;
+  text-align: left;
   color: var(--color-teal);
   width: 50%;
   margin: auto;
+  text-align-last: end;
 }
+
+/* Partie : À Propos */
+article {
+  display: flex;
+}
+
+#about {
+  width: 50%;
+  background-color: var(--color-orangee);
+}
+
+#img-bg {
+  width: 50%;
+  background-image: url(/public/img/img_bg2.jpg);
+  background-size: contain;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--color-grey);
+  margin: 0;
+}
+

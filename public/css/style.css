@@ -116,3 +116,55 @@ article {
   margin: 0;
 }
 
+
+/* PARTIE : PHOTOS */
+#boxPics {
+  display: flex;
+  flex-direction: column;
+}
+
+#boxPics div {
+  width: 50%;
+  margin: auto;
+}
+
+#boxPics div h2 {
+  text-align: center;
+}
+
+#boxPics div p {
+  text-align-last: end;
+}
+
+footer {
+  display: flex;
+  flex-direction: flex;
+  flex-wrap: wrap;
+}
+
+footer h2 {
+  width: 100%;
+  text-align: center;
+}
+
+footer section {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+footer section form {
+  display: flex;
+  flex-direction: column;
+}
+
+#boxContact {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+

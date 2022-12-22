@@ -135,7 +135,7 @@ article {
   margin-top: 2rem;
 }
 
-#mid-page-left {
+/* #mid-page-left {
   width: 50%;
   margin: 0 auto;
   background-color: var(--color-grey);
@@ -149,28 +149,28 @@ article {
 
 #mid-page-left p {
   color: var(--color-primary);
-}
+} */
 
-#mid-page-right {
-  width: 50%;
+#mid-page {
+  width: 100%;
   background-color: var(--color-orangee);
 }
 
-#mid-page-right h2 {
+#mid-page h2 {
   text-align: center;
   margin: 1rem auto;
 }
 
-#mid-page-right ul {
+#mid-page ul {
   display: flex;
   justify-content: space-evenly;
 }
 
-#mid-page-right ul li {
+#mid-page ul li {
   list-style: none;
 }
 
-#mid-page-right a {
+#mid-page a {
   text-decoration: none;
   color: var(--color-grey);
   margin: auto;

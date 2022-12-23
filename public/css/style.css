@@ -219,7 +219,9 @@ article {
 
 /* PARTIE : CAROUSEL  */
 
-
+.textChantier {
+  color: var(--color-orange);
+}
 
 #carousel {
   display: flex;
@@ -288,6 +290,7 @@ footer h2 {
   text-align: left;
   margin-left: 5%;
   margin: 0.5rem auto;
+  font-size: 18px;
 }
 
 #contact a {

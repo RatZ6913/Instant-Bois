@@ -1,9 +1,2 @@
-// let mail = document.querySelector('#mail');
-// let tel = document.querySelector('#tel');
+let boxCarousel = document.querySelector('#carousel');
 
-
-// console.log(mail);
-
-// mail.addEventListener('click', () => {
-
-// })

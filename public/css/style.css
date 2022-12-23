@@ -231,14 +231,21 @@ article {
 }
 
 #previous {
+  display: none;
   margin: auto;
   padding: 0.5rem 0.8rem;
   color: var(--color-grey);
   background-color: var(--color-orange);
   z-index: 1;
+}
+
+#previous:hover {
+  background-color: var(--color-grey);
+  color: var(--color-orange);
 }
 
 #next {
+  display: none;
   margin: auto;
   padding: 0.5rem 0.8rem;
   color: var(--color-grey);
@@ -246,8 +253,13 @@ article {
   z-index: 1;
 }
 
+#next:hover {
+  background-color: var(--color-grey);
+  color: var(--color-orange);
+}
+
 .imgCarousel {
-  background-image: url(../img/chantier1_1.jpg);
+  background-image: url(../img/charpenterie.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

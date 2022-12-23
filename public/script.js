@@ -8,6 +8,7 @@ let chantier2 = document.querySelector('#arr2');
 let chantier3 = document.querySelector('#arr3');
 let chantier4 = document.querySelector('#arr4');
 let next = document.querySelector('#next');
+let previous = document.querySelector('#previous');
 
 let arrChantier1 = [
   "url(public/img/chantier1_1.jpg)",
@@ -46,14 +47,13 @@ let arrChantier4 = [
 ];
 
 next.before(imgCarousel);
-boxCarousel.before(textChantier);
-textChantier.textContent = "Chantier réalisé sur la commune de Risoul. Chantier en ossature bois, avec une couverture en bac acier.";
-
 
 chantier1.addEventListener('click', () => {
   let i = 0;
   imgCarousel.style.backgroundImage = arrChantier1[0];
   boxCarousel.before(textChantier);
+  previous.style.display = "flex";
+  next.style.display = "flex";
   textChantier.textContent = "Chantier réalisé sur la commune de Risoul. Chantier en ossature bois, avec une couverture en bac acier.";
 
   next.addEventListener('click', () => {
@@ -69,6 +69,8 @@ chantier2.addEventListener('click', () => {
   let j = 0;
   imgCarousel.style.backgroundImage = arrChantier2[0];
   boxCarousel.before(textChantier);
+  previous.style.display = "flex";
+  next.style.display = "flex";
   textChantier.textContent = "Chantier réalisé sur la commune de Saint-André d'Embrun. Charpente pour un garage. Charpente en épicéa avec une couverture en bac acier.";
 
   next.addEventListener('click', () => {
@@ -84,6 +86,8 @@ chantier3.addEventListener('click', () => {
   let k = 0;
   imgCarousel.style.backgroundImage = arrChantier3[0];
   boxCarousel.before(textChantier);
+  previous.style.display = "flex";
+  next.style.display = "flex";
   textChantier.textContent = "Chantier réalisé à Saint Bonnet en Champsaur. Remplacement de la charpente, création de velux , et une couverture en tuile rouge.";
 
   next.addEventListener('click', () => {
@@ -99,6 +103,8 @@ chantier4.addEventListener('click', () => {
   let l = 0;
   imgCarousel.style.backgroundImage = arrChantier4[0];
   boxCarousel.before(textChantier);
+  previous.style.display = "flex";
+  next.style.display = "flex";
   textChantier.textContent = "Chantier réalisé à la bâtie neuve. Rénovation d'une ancienne grange. Remplacement des pannes et chevrons en conservant les anciennes fermes. Création de lucarne et de VELUX. La couverture est en bac acier.";
 
   next.addEventListener('click', () => {

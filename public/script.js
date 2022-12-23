@@ -120,7 +120,6 @@ chantier4.addEventListener('click', () => {
   });
 })
 
-
 imgAnim = (param) => {
   param.style.transition = "transform 0.1s ease";
   param.style.transform = "scaleY(0.9)";

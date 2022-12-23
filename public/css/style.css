@@ -210,15 +210,21 @@ article {
 
 #mid-page a {
   text-decoration: none;
-  color: var(--color-primary);
+  color: var(--color-grey);
   margin: auto;
   text-align: center;
   font-weight: 700;
   cursor: pointer;
+  padding: 0.2rem;
+  background-color: var(--color-primary);
+}
+
+#mid-page a:hover {
+  /* color: var(--color-primary); */
+  background-color: var(--color-orange);
 }
 
 /* PARTIE : CAROUSEL  */
-
 .textChantier {
   color: var(--color-orange);
 }
@@ -350,4 +356,9 @@ footer button:hover {
 
 pre {
   color: var(--color-teal);
+}
+
+#mention {
+  width: 100%;
+  font-size: 14px;
 }

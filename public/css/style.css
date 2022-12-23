@@ -211,6 +211,50 @@ article {
   font-weight: 700;
 }
 
+/* PARTIE : CAROUSEL  */
+
+#carousel {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  background-color: var(--color-brown-light);
+}
+
+#previous {
+  margin: auto;
+  padding: 0.5rem 0.8rem;
+  color: var(--color-grey);
+  background-color: var(--color-orange);
+  z-index: 1;
+}
+
+#next {
+  margin: auto;
+  padding: 0.5rem 0.8rem;
+  color: var(--color-grey);
+  background-color: var(--color-orange);
+  z-index: 1;
+}
+
+.imgCarousel {
+  background-image: url(/public/img/chantier1_1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 55vw;
+  height: 50vh;
+  animation: image ease 2s;
+}
+
+@keyframes image {
+  from {
+    transform: translate(-50%);
+  }
+  to {
+    transform: translate(0%);
+  }
+}
+
 /* PARTIE : FOOTER  */
 /* Formulaire  */
 footer {

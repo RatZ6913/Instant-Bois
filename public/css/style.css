@@ -26,7 +26,7 @@ h1, h2 {
 /* LOGO  */
 #boxLogo {
   margin: 0;
-  background-color: var(--color-grey);
+  background-color: var(--color-brown-light);
   margin-left: 2rem;
 }
 
@@ -40,6 +40,7 @@ h1, h2 {
   height: 5.5vh;
   background-color: var(--color-grey);
   opacity: 95%;
+  position: fixed;
 }
 
 #page-header p {
@@ -85,13 +86,41 @@ nav ul li a:hover {
 /* // ZONE DE FLOATAISON */
 #top-page {
   display: flex;
+  flex-direction: column;
   opacity: 80%;
-  background-color: var(--color-grey);
   position: absolute;
   bottom: 35%;
   left: 25%;
+  right: 25%;
   margin: auto;
+  background-color: var(--color-grey);
 }
+
+#cta {
+  display: flex;
+  text-align: right;
+  width: 150px;
+  margin-bottom: 1rem;
+  justify-content: center;
+  place-self: center;
+  padding: 20px 40px;
+  margin: 0;
+}
+
+#cta a, button {
+  text-decoration: none;
+  background-color: var(--color-primary);
+  color: var(--color-grey);
+  margin: 0;
+  border: none;
+  cursor: pointer;
+}
+
+#cta a, button:hover {
+  color: var(--color-orange);
+  background-color: var(--color-teal);
+}
+
 
 #top-page #name {
   color: var(--color-primary);
@@ -101,9 +130,10 @@ nav ul li a:hover {
   background-color: var(--color-grey);
   text-align: left;
   color: var(--color-teal);
-  width: 50%;
+  width: 60%;
   margin: auto;
   text-align-last: end;
+  margin-bottom: 1.5rem;
 }
 
 /* Partie : À Propos */
@@ -118,6 +148,7 @@ article {
   width: 30%;
   background-color: #d2c3b0;
   place-self: center;
+  opacity: 90%;
 }
 
 #about h2 {
@@ -133,7 +164,7 @@ article {
 }
 
 #img-bg {
-  width: 25%;
+  width: 40%;
   background-image: url(/public/img/img_bg2.jpg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -174,6 +205,7 @@ article {
   color: var(--color-primary);
   margin: auto;
   text-align: center;
+  font-weight: 700;
 }
 
 /* PARTIE : FOOTER  */

@@ -94,6 +94,7 @@ nav ul li a:hover {
   right: 25%;
   margin: auto;
   background-color: var(--color-grey);
+  z-index: 0;
 }
 
 #cta {
@@ -194,6 +195,7 @@ article {
 #mid-page ul {
   display: flex;
   justify-content: space-evenly;
+  padding: 0;
 }
 
 #mid-page ul li {

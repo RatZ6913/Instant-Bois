@@ -58,3 +58,41 @@
     width: 100px;
   }
 }
+
+@media screen and (max-width: 540px) {
+
+  #page-header {
+    background-color: transparent;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin: 0.5rem;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #about {
+    width: 100%;
+  }
+
+  #mid-page a {
+    font-size: 12px;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  footer #contact {
+    width: 90%;
+    margin-top: 1rem;
+  }
+}

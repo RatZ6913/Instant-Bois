@@ -1,16 +1,119 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./public/css/style.css" type="text/css">
-  <script src="./script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./public/css/style.css" type="text/css" />
+  <meta name="descripion" content="Notre entreprise de charpente et couverture en bois offre des services de construction et rénovation de bâtiments en 
+  bois de qualité. Nous avons une équipe de charpentiers professionnels et expérimentés. Consultez les photos de nos 
+  chantiers pour découvrir notre savoir-faire en matière de charpente et de couverture en bois." />
+  <link rel="icon" type="image/x-icon" href="./public/img/logo.png">
+  <script src="./public/script.js" defer></script>
   <title>L'instant Bois</title>
-  
 </head>
+
 <body>
-  <h1>L'instant Bois</h1>
-  
+  <header>
+    <div id="page-header">
+      <nav>
+        <figure id="boxLogo">
+          <img src="./public/img/logo.png" alt="logo-l'instant-bois" id="logo" />
+        </figure>
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#about">À Propos</a></li>
+          <li><a href="#pictures">Photos</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <section>
+      <div id="top-page">
+        <h1>
+          ❝ <span id="name"> L'instant Bois</span>, pour des <strong>charpentes</strong> et <strong>couvertures</strong>
+          sur mesure ❞
+        </h1>
+      </div>
+  </header>
+
+  <article>
+    <div id="about">
+      <h2>Que faisons-nous ?</h2>
+      <p>
+        Notre entreprise de <strong> charpente </strong> et <strong>couverture</strong> en bois offre des
+        services de <strong>construction</strong> et <strong>rénovation</strong> de bâtiments en bois, y
+        compris la <strong>conception et la fabrication de charpentes sur mesure</strong>,
+        l'installation de couvertures en bois et la réparation de structures
+        existantes. Nous avons une équipe de <strong>charpentiers professionnels et
+        expérimentés </strong> qui garantissent la qualité de nos travaux et le
+        respect des <strong>normes de sécurité en vigueur</strong>. Consultez les <strong> photos de
+        nos chantiers</strong> pour en savoir plus sur notre savoir-faire.
+        Contactez-nous pour une solution adaptée à vos besoins et à votre
+        budget.
+      </p>
+    </div>
+    <figure id="img-bg"></figure>
+  </article>
+  </section>
+
+  <!-- PARTIE : PHOTOS  -->
+  <article id="boxPics">
+    <div id="mid-page">
+      <h2 id="pictures">Nos Photos de chantiers</h2>
+      <ul>
+        <li><a href="">Chantier n°1</a></li>
+        <li><a href="">Chantier n°2</a></li>
+        <li><a href="">Chantier n°3</a></li>
+        <li><a href="">Chantier n°4</a></li>
+      </ul>
+    </div>
+    <div id="carousel">
+
+    </div>
+    <!-- ICI : À METTRE PHOTO (Carroussel ou Autre idée) -->
+  </article>
+
+  <footer>
+    <section id="contact">
+      <h2>Contactez-nous</h2>
+      <h3>Par mail :</h3>
+      <a href="mailto:contact@instant-bois.fr?subject=Objet"><button id="mail">Client</button></a>
+      <a href="mailto:fournisseurs@instant-bois.fr?subject=Objet"><button id="mail">Pro</button></a>
+
+      <h3>Par téléphone :</h3>
+      <a href="tel:+33699309869"><button>Camille</button></a>
+      <a href=""><button id="tel2">Yannick</button></a>
+    </section>
+
+    <section id="footer-right">
+      <div>
+        <figure>
+          <img src="./public/img/logo.png" alt="logo-instant-bois" />
+          <!-- Image L'instant Bois à mettre ici -->
+        </figure>
+      </div>
+      <div id="boxContact">
+        <span><img src="./public/img/icone-societe.png" alt="icone-societe" /> : SARL L'INSTANT BOIS</span>
+        <span><img src="./public/img/icone-lieu.png" alt="icone-lieu" /> : ZA Entraigues</span>
+        <span><img src="./public/img/icone-postale.png" alt="icone-code-postal" /> : 05200 EMBRUM</span>
+        <span><img src="./public/img/icone-telephone.png" alt="icone-telephone" /> : Camille 06.32.03.54.21</span>
+        <span><img src="./public/img/icone-telephone.png" alt="icone-telephone" /> : Yannick 06.32.03.54.21</span>
+        <span><img src="./public/img/icone-mail.png" alt="icone-mail" /> Client : contact@instant-bois.fr</span>
+        <span><img src="./public/img/icone-mail.png" alt="icone-mail" /> Pro : fournisseurs@instant-bois.fr</span>
+      </div>
+
+      <div>
+        <pre>
+Cordialement 
+  LAFONT Camille</pre>
+      </div>
+    </section>
+  </footer>
 </body>
 </html>

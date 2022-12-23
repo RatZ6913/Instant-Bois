@@ -35,10 +35,9 @@ h1, h2 {
 }
 
 /* PARTIE BARRE DE NAVIGATION  */
-
 #page-header {
   width: 100%;
-  height: 5vh;
+  height: 5.5vh;
   background-color: var(--color-grey);
   opacity: 95%;
 }
@@ -85,12 +84,6 @@ nav ul li a:hover {
 
 /* // ZONE DE FLOATAISON */
 #top-page {
-  /* height: 80vh;
-  background-image: url(/public/img/img_bg1.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; */
   display: flex;
   opacity: 80%;
   background-color: var(--color-grey);
@@ -137,7 +130,7 @@ article {
   width: 70%;
   text-align: center;
   color: white;
-  margin: auto;
+  margin: 1rem auto;
 }
 
 #img-bg {
@@ -155,7 +148,7 @@ article {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin-top: 2rem;
+  margin: 2rem auto;
 }
 
 #mid-page {
@@ -179,7 +172,7 @@ article {
 
 #mid-page a {
   text-decoration: none;
-  color: var(--color-grey);
+  color: var(--color-primary);
   margin: auto;
   text-align: center;
 }
@@ -220,10 +213,6 @@ textarea {
   flex-direction: column;
 }
 
-/* #footer-right figure { */
-  /* margin: 0; */
-/* } */
-
 #footer-right img {
   width: 150px;
 }
@@ -231,14 +220,23 @@ textarea {
 #footer-right div:nth-child(3) {
   display: block;
   width: 100%;
-  background-color: var(--color-grey);
 }
 
 #boxContact {
   display: flex;
   flex-direction: column;
+  color: var(--color-primary);
+  justify-content: center;
+  font-size: 14px;
 }
 
+#boxContact span img {
+  width: 18px;
+}
+
+pre {
+  color: var(--color-teal);
+}
 
 
 

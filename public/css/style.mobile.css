@@ -13,15 +13,13 @@
   color: var(--color-primary);
 }
 
-/* #img-bg {
-  width: 50%;
-  background-image: url(/public/img/img_bg2.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--color-grey);
-  margin: 0;
-} */
+#cta {
+  display: none;
+}
+
+#top-page h1 {
+  font-size: 22px;
+}
 
 @media screen and (max-width: 805px) {
   #about {
@@ -81,6 +79,17 @@
 
   #about {
     width: 100%;
+  }
+
+  #top-page {
+    width: 60%;
+  }
+
+  #top-page h1 {
+    display: block;
+    width: 50%;
+    margin: auto;
+    font-size: 18px;
   }
 
   #mid-page a {

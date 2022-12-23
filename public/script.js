@@ -18,12 +18,15 @@ let i = 0;
 
 
 next.addEventListener('click', () => {
-  imgCarousel.style.backgroundImage = arrChantier1[i];
+  imgCarousel.style.transform = "translate( 50%)";
+  imgCarousel.style.transition = "2s ease-in-out";
   i++;
 
   if (i == arrChantier1.length) {
     i = 0;
   }
+  imgCarousel.style.backgroundImage = arrChantier1[i];
+
 });
 
 

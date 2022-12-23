@@ -101,7 +101,7 @@ nav ul li a:hover {
 #cta {
   display: flex;
   text-align: right;
-  width: 150px;
+  width: 200px;
   margin-bottom: 1rem;
   justify-content: center;
   place-self: center;
@@ -213,6 +213,8 @@ article {
 
 /* PARTIE : CAROUSEL  */
 
+
+
 #carousel {
   display: flex;
   justify-content: space-evenly;
@@ -243,17 +245,17 @@ article {
   background-position: center;
   width: 55vw;
   height: 50vh;
-  animation: image ease 2s;
+  /* animation: image ease 2s; */
 }
 
-@keyframes image {
+/* @keyframes image {
   from {
     transform: translate(-50%);
   }
   to {
     transform: translate(0%);
   }
-}
+} */
 
 /* PARTIE : FOOTER  */
 /* Formulaire  */

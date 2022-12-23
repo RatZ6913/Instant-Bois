@@ -8,39 +8,39 @@ let chantier4 = document.querySelector('#arr4');
 let next = document.querySelector('#next');
 
 let arrChantier1 = [
-  "url(/public/img/chantier1_1.jpg)",
-  "url(/public/img/chantier1_2.jpg)",
-  "url(/public/img/chantier1_3.jpg)",
-  "url(/public/img/chantier1_4.jpg)",
-  "url(/public/img/chantier1_5.jpg)",
-  "url(/public/img/chantier1_6.jpg)"
+  "url(public/img/chantier1_1.jpg)",
+  "url(public/img/chantier1_2.jpg)",
+  "url(public/img/chantier1_3.jpg)",
+  "url(public/img/chantier1_4.jpg)",
+  "url(public/img/chantier1_5.jpg)",
+  "url(public/img/chantier1_6.jpg)"
 ];
 
 let arrChantier2 = [
-  "url(/public/img/chantier2_1.jpg)",
-  "url(/public/img/chantier2_2.jpg)",
-  "url(/public/img/chantier2_3.jpg)",
-  "url(/public/img/chantier2_4.jpg)",
-  "url(/public/img/chantier2_5.jpg)"
+  "url(public/img/chantier2_1.jpg)",
+  "url(public/img/chantier2_2.jpg)",
+  "url(public/img/chantier2_3.jpg)",
+  "url(public/img/chantier2_4.jpg)",
+  "url(public/img/chantier2_5.jpg)"
 ];
 
 let arrChantier3 = [
-  "url(/public/img/chantier3_1.jpg)",
-  "url(/public/img/chantier3_2.jpg)",
-  "url(/public/img/chantier3_3.jpg)",
-  "url(/public/img/chantier3_4.jpg)",
-  "url(/public/img/chantier3_5.jpg)"
+  "url(public/img/chantier3_1.jpg)",
+  "url(public/img/chantier3_2.jpg)",
+  "url(public/img/chantier3_3.jpg)",
+  "url(public/img/chantier3_4.jpg)",
+  "url(public/img/chantier3_5.jpg)"
 ];
 
 let arrChantier4 = [
-  "url(/public/img/chantier4_1.jpg)",
-  "url(/public/img/chantier4_2.jpg)",
-  "url(/public/img/chantier4_3.jpg)",
-  "url(/public/img/chantier4_4.jpg)",
-  "url(/public/img/chantier4_5.jpg)",
-  "url(/public/img/chantier4_6.jpg)",
-  "url(/public/img/chantier4_7.jpg)",
-  "url(/public/img/chantier4_8.jpg)"
+  "url(public/img/chantier4_1.jpg)",
+  "url(public/img/chantier4_2.jpg)",
+  "url(public/img/chantier4_3.jpg)",
+  "url(public/img/chantier4_4.jpg)",
+  "url(public/img/chantier4_5.jpg)",
+  "url(public/img/chantier4_6.jpg)",
+  "url(public/img/chantier4_7.jpg)",
+  "url(public/img/chantier4_8.jpg)"
 ];
 
 next.before(imgCarousel);

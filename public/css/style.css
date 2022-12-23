@@ -87,8 +87,6 @@ nav ul li a:hover {
   display: flex;
   opacity: 80%;
   background-color: var(--color-grey);
-  /* flex-wrap: wrap; */
-  /* background: scroll; */
   position: absolute;
   bottom: 35%;
   left: 25%;
@@ -131,6 +129,7 @@ article {
   text-align: center;
   color: white;
   margin: 1rem auto;
+  color: var(--color-primary);
 }
 
 #img-bg {
@@ -191,20 +190,42 @@ footer h2 {
   text-align: center;
 }
 
-footer section {
-  display: flex;
-  flex-direction: row;
+#contact {
+  color: var(--color-orange);
+  background-color: var(--color-grey);
+  width: 25%;
+  padding-bottom: 1rem;
+}
+
+#contact h3 {
+  text-align: left;
+  margin-left: 5%;
+  margin: 0.5rem auto;
+}
+
+#contact a {
+  margin-left: 5%;
   margin: auto;
 }
 
-footer section form {
+footer section {
   display: flex;
   flex-direction: column;
-  color: var(--color-primary);
+  margin: auto;
 }
 
-textarea {
-  margin: 1rem auto;
+footer button {
+  margin: 0.3rem auto;
+  width: 150px;
+  color: var(--color-grey);
+  background-color: var(--color-teal);
+  border: none;
+  cursor: pointer;
+  padding: 0.3rem 0.5rem;
+}
+
+footer button:hover {
+  background-color: var(--color-orange);
 }
 
 /* Footer : Coordonnées */
@@ -237,7 +258,3 @@ textarea {
 pre {
   color: var(--color-teal);
 }
-
-
-
-

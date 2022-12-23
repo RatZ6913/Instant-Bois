@@ -209,6 +209,7 @@ article {
   margin: auto;
   text-align: center;
   font-weight: 700;
+  cursor: pointer;
 }
 
 /* PARTIE : CAROUSEL  */

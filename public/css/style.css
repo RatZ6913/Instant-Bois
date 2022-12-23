@@ -3,7 +3,7 @@
 
 :root {
   --color-primary: #6B3329;
-  --color-grey : #D7DDFA;
+  --color-grey : #e2e2e1;
   --color-teal : #156173;
   --color-orangee : #b8832c;
   --font-family-title: 'IBM Plex Mono', monospace;
@@ -34,15 +34,25 @@ h1, h2 {
 }
 
 /* PARTIE BARRE DE NAVIGATION  */
+
+header {
+  height: 80vh;
+  background-image: url(/public/img/img_bg1.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-primary);
+  /* background-color: var(--color-primary); */
   align-items: center;
-  background-image: url(/public/img/Logo\ blanc-02.png);
-  background-size: 6rem, contain;
+  /* background-image: url(/public/img/Logo\ blanc-02.png); */
+  /* background-size: 6rem, contain;
   background-position: 9rem;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 
 nav ul {
@@ -70,16 +80,21 @@ nav ul li a:hover {
 
 /* // ZONE DE FLOATAISON */
 #top-page {
-  height: 80vh;
+  /* height: 80vh;
   background-image: url(/public/img/img_bg1.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
   display: flex;
   opacity: 80%;
   background-color: var(--color-grey);
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  /* background: scroll; */
+  position: absolute;
+  bottom: 35%;
+  left: 25%;
+  margin: auto;
 }
 
 #top-page #name {
@@ -99,11 +114,12 @@ nav ul li a:hover {
 article {
   display: flex;
   background-color: var(--color-grey);
+  margin-top: 2rem;
 }
 
 #about {
   width: 50%;
-  background-color: var(--color-orangee);
+  background-color: #d2c3b0;
   place-self: center;
 }
 
@@ -113,7 +129,7 @@ article {
 
 #about p {
   text-align: center;
-  color: var(--color-grey);
+  color: white;
 }
 
 #img-bg {

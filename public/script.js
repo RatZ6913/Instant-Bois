@@ -57,6 +57,7 @@ chantier1.addEventListener('click', () => {
   textChantier.textContent = "Chantier réalisé sur la commune de Risoul. Chantier en ossature bois, avec une couverture en bac acier.";
 
   next.addEventListener('click', () => {
+    imgAnim(imgCarousel);
     i++;
     if (i == arrChantier1.length) {
       i = 0;
@@ -74,6 +75,7 @@ chantier2.addEventListener('click', () => {
   textChantier.textContent = "Chantier réalisé sur la commune de Saint-André d'Embrun. Charpente pour un garage. Charpente en épicéa avec une couverture en bac acier.";
 
   next.addEventListener('click', () => {
+    imgAnim(imgCarousel);
     j++;
     if (j == arrChantier2.length) {
       j = 0;
@@ -91,6 +93,7 @@ chantier3.addEventListener('click', () => {
   textChantier.textContent = "Chantier réalisé à Saint Bonnet en Champsaur. Remplacement de la charpente, création de velux , et une couverture en tuile rouge.";
 
   next.addEventListener('click', () => {
+    imgAnim(imgCarousel);
     k++;
     if (k == arrChantier3.length) {
       k = 0;
@@ -108,6 +111,7 @@ chantier4.addEventListener('click', () => {
   textChantier.textContent = "Chantier réalisé à la bâtie neuve. Rénovation d'une ancienne grange. Remplacement des pannes et chevrons en conservant les anciennes fermes. Création de lucarne et de VELUX. La couverture est en bac acier.";
 
   next.addEventListener('click', () => {
+    imgAnim(imgCarousel);
     l++;
     if (l == arrChantier4.length) {
       l = 0;
@@ -117,5 +121,12 @@ chantier4.addEventListener('click', () => {
 })
 
 
+imgAnim = (param) => {
+  param.style.transition = "transform 0.1s ease";
+  param.style.transform = "scaleY(0.9)";
 
+  setTimeout(() => {
+    param.style.transform = "scaleY(1)";
+  }, 100);
+}
 

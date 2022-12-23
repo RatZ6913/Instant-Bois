@@ -265,17 +265,7 @@ article {
   background-position: center;
   width: 55vw;
   height: 50vh;
-  /* animation: image ease 2s; */
 }
-
-/* @keyframes image {
-  from {
-    transform: translate(-50%);
-  }
-  to {
-    transform: translate(0%);
-  }
-} */
 
 /* PARTIE : FOOTER  */
 /* Formulaire  */

@@ -51,7 +51,7 @@ h1, h2 {
 
 header {
   height: 80vh;
-  background-image: url(./public/img/img_bg1.jpg);
+  background-image: url('/public/img/img_bg1.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -167,7 +167,7 @@ article {
 
 #img-bg {
   width: 40%;
-  background-image: url(./public/img/img_bg2.jpg);
+  background-image: url('/public/img/img_bg2.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -240,7 +240,7 @@ article {
 }
 
 .imgCarousel {
-  background-image: url(./public/img/chantier1_1.jpg);
+  background-image: url('/public/img/chantier1_1.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

@@ -59,18 +59,24 @@ chantier1.addEventListener('click', () => {
 
   next.addEventListener('click', () => {
     imgAnim(imgCarousel);
-    previous.style.visibility = "visible";
     i++;
     if (i == arrChantier1.length) {
       i = 0;
     }
+
+    if (i == 0) {
+      previous.style.visibility = "hidden";
+    } else {
+      previous.style.visibility = "visible";
+    }
+
     imgCarousel.style.backgroundImage = arrChantier1[i];
   });
 
   previous.addEventListener('click', () => {
     imgAnim(imgCarousel);
     i--;
-    if(i === 0){
+    if (i === 0) {
       previous.style.visibility = "hidden";
     }
     imgCarousel.style.backgroundImage = arrChantier1[i];
@@ -88,18 +94,24 @@ chantier2.addEventListener('click', () => {
 
   next.addEventListener('click', () => {
     imgAnim(imgCarousel);
-    previous.style.visibility = "visible";
     j++;
     if (j == arrChantier2.length) {
       j = 0;
     }
+
+    if (j == 0) {
+      previous.style.visibility = "hidden";
+    } else {
+      previous.style.visibility = "visible";
+    }
+
     imgCarousel.style.backgroundImage = arrChantier2[j];
   });
 
   previous.addEventListener('click', () => {
     imgAnim(imgCarousel);
     j--;
-    if(j === 0){
+    if (j === 0) {
       previous.style.visibility = "hidden";
     }
     imgCarousel.style.backgroundImage = arrChantier2[j];
@@ -117,18 +129,24 @@ chantier3.addEventListener('click', () => {
 
   next.addEventListener('click', () => {
     imgAnim(imgCarousel);
-    previous.style.visibility = "visible";
     k++;
     if (k == arrChantier3.length) {
       k = 0;
     }
+
+    if (k == 0) {
+      previous.style.visibility = "hidden";
+    } else {
+      previous.style.visibility = "visible";
+    }
+
     imgCarousel.style.backgroundImage = arrChantier3[k];
   });
 
   previous.addEventListener('click', () => {
     imgAnim(imgCarousel);
     k--;
-    if(k === 0){
+    if (k === 0) {
       previous.style.visibility = "hidden";
     }
     imgCarousel.style.backgroundImage = arrChantier3[k];
@@ -146,18 +164,24 @@ chantier4.addEventListener('click', () => {
 
   next.addEventListener('click', () => {
     imgAnim(imgCarousel);
-    previous.style.visibility = "visible";
     l++;
     if (l == arrChantier4.length) {
       l = 0;
     }
+
+    if (l == 0) {
+      previous.style.visibility = "hidden";
+    } else {
+      previous.style.visibility = "visible";
+    }
+
     imgCarousel.style.backgroundImage = arrChantier4[l];
   });
 
   previous.addEventListener('click', () => {
     imgAnim(imgCarousel);
     l--;
-    if(l === 0){
+    if (l === 0) {
       previous.style.visibility = "hidden";
     }
     imgCarousel.style.backgroundImage = arrChantier4[l];

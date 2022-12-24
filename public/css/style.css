@@ -78,14 +78,14 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: var(--color-orange);
+  color: var(--color-primary);
   background-color: var(--color-grey);
   padding: 0.3rem 0.8rem;
 }
 
 nav ul li a:hover {
   background-color: var(--color-grey);
-  color: var(--color-teal);
+  color: var(--color-orange);
 }
 
 /* // ZONE DE FLOATAISON */
@@ -359,6 +359,21 @@ pre {
 }
 
 #mention {
+  display: flex;
+  justify-content: center;
   width: 100%;
   font-size: 14px;
+  background-color: var(--color-teal);
+}
+
+#mention a {
+  text-align: center;
+  color: var(--color-grey);
+  margin-right: 1rem;
+}
+
+#mention p {
+  margin: 0;
+  color: var(--color-brown-light);
+  margin-right: 1rem;
 }

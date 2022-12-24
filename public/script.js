@@ -194,7 +194,7 @@ imgAnim = (param) => {
 
   setTimeout(() => {
     param.style.transform = "scaleY(1)";
-  }, 100);
+  }, 90);
 };
 
 

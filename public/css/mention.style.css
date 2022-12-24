@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#boxLogo {
+  text-align: center;
+}
+
+#logo {
+  width: 250px;
+}
+
+section {
+  display: flex;
+}
+
+aside {
+  display: flex;
+  border-right: 1px solid #6b6969;
+}
+aside ul {
+  list-style: decimal;
+  padding: 10px;
+}
+
+aside ul a {
+  margin: 1px;
+  color: #1963c5;
+  font-size: 14px;
+}
+aside li {
+  margin: auto 10px;
+}
+
+article {
+  justify-content: end;
+  position: sticky;
+  width: 80%;
+  margin: auto 0.5rem;
+}
+
+article h1 {
+  font-weight: bolder;
+  font-size: xx-large;
+}

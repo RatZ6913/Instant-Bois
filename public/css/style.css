@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@700&display=swap');
-/* FONT FAMILY TITRE */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 :root {
@@ -429,4 +428,18 @@ footer button:hover {
 
 pre {
   color: var(--color-teal);
+}
+
+#mention {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  justify-content: center; 
+  place-self: center;
+  margin: auto;
+}
+
+#mention a, p {
+  margin-right: 0.5rem;
+  padding-top: 0.7rem;
 }

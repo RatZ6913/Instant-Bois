@@ -25,6 +25,9 @@ var sitesData = [
 ];
 
 <<<<<<< refs/remotes/PierreYEM/Working
+<<<<<<< refs/remotes/PierreYEM/Working
+=======
+>>>>>>> update merge
 for ({ id, limit } of sitesData) {
 
   for (let numImg = 1; numImg < limit; numImg++) {
@@ -202,6 +205,7 @@ buttonLeft.addEventListener('click', () => {
         img.classList.remove('fadeIn');
         buttonLeft.removeAttribute("disabled", "")
       })
+<<<<<<< refs/remotes/PierreYEM/Working
 =======
 next.before(imgCarousel);
 
@@ -354,6 +358,8 @@ imgAnim = (param) => {
   }, 90);
 };
 >>>>>>> Update Mentions
+=======
+>>>>>>> update merge
 
       break;
   }

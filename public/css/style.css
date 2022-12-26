@@ -223,16 +223,6 @@ article {
   background-color: var(--color-primary);
 }
 
-<<<<<<< HEAD
-#mid-page a:hover {
-  /* color: var(--color-primary); */
-  background-color: var(--color-orange);
-}
-
-/* PARTIE : CAROUSEL  */
-.textChantier {
-  color: var(--color-orange);
-=======
 /* PARTIE : CAROUSEL  */
 .site {
   transition: 0.5s;
@@ -278,7 +268,6 @@ article {
 .right {
   right: 5%;
   transition: 0.5s;
->>>>>>> Working
 }
 
 .left {
@@ -440,27 +429,4 @@ footer button:hover {
 
 pre {
   color: var(--color-teal);
-<<<<<<< HEAD
-}
-
-#mention {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  font-size: 14px;
-  background-color: var(--color-teal);
-}
-
-#mention a {
-  text-align: center;
-  color: var(--color-grey);
-  margin-right: 1rem;
-}
-
-#mention p {
-  margin: 0;
-  color: var(--color-brown-light);
-  margin-right: 1rem;
-=======
->>>>>>> Working
 }

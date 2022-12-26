@@ -1,12 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@700&display=swap'); /* FONT FAMILY TITRE */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@700&display=swap');
+/* FONT FAMILY TITRE */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 :root {
   --color-primary: #6B3329;
-  --color-grey : #e2e2e1;
-  --color-teal : #156173;
-  --color-brown-light : #d2c3b0;
-  --color-orange : #b8832c;
+  --color-grey: #e2e2e1;
+  --color-teal: #156173;
+  --color-brown-light: #d2c3b0;
+  --color-orange: #b8832c;
   --font-family-title: 'IBM Plex Mono', monospace;
 }
 
@@ -18,7 +19,8 @@ body {
   font-size: 10px;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: var(--font-family-title);
   font-weight: 700;
   color: var(--color-teal);
@@ -113,7 +115,8 @@ nav ul li a:hover {
   margin: 0;
 }
 
-#cta a, button {
+#cta a,
+button {
   text-decoration: none;
   background-color: var(--color-primary);
   color: var(--color-grey);
@@ -122,7 +125,8 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
-#cta a, button:hover {
+#cta a,
+button:hover {
   color: var(--color-orange);
   background-color: var(--color-teal);
 }
@@ -219,6 +223,7 @@ article {
   background-color: var(--color-primary);
 }
 
+<<<<<<< HEAD
 #mid-page a:hover {
   /* color: var(--color-primary); */
   background-color: var(--color-orange);
@@ -227,7 +232,86 @@ article {
 /* PARTIE : CAROUSEL  */
 .textChantier {
   color: var(--color-orange);
+=======
+/* PARTIE : CAROUSEL  */
+.site {
+  transition: 0.5s;
+  padding: 0 10px;
 }
+
+.site:hover {
+  background-color: #F7F7F7FF;
+  transform: translate(-3px, -3px);
+  box-shadow: 3px 3px 1px black;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.site:active {
+  transform: translate(0, 0);
+  transition: 0s;
+  box-shadow: unset;
+}
+
+#activeImg {
+  position: relative;
+  height: 80vh;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+}
+
+#activeImg img {
+  max-width: 100%;
+  transition: 0.3s;
+
+}
+
+.left,
+.right {
+  position: absolute;
+  top: 50%;
+  background-color: #F7F7F7;
+  opacity: 0.75;
+}
+
+.right {
+  right: 5%;
+  transition: 0.5s;
+>>>>>>> Working
+}
+
+.left {
+  left: 5%;
+}
+
+
+.right:hover,
+.left:hover {
+  scale: 1.3;
+  transition: 0.5s;
+  background-color: #F7F7F7;
+  opacity: 1;
+}
+
+.right:active,
+.left:active {
+  scale: 1;
+  transition: 0s;
+  background-color: unset;
+
+}
+
+.fadeIn {
+  transition: 0.3s;
+  opacity: 0
+}
+
+
+
+
+
+
 
 #carousel {
   display: flex;
@@ -356,6 +440,7 @@ footer button:hover {
 
 pre {
   color: var(--color-teal);
+<<<<<<< HEAD
 }
 
 #mention {
@@ -376,4 +461,6 @@ pre {
   margin: 0;
   color: var(--color-brown-light);
   margin-right: 1rem;
+=======
+>>>>>>> Working
 }

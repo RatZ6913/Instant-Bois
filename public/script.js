@@ -1,51 +1,30 @@
-let boxCarousel = document.querySelector('#carousel');
-let imgCarousel = document.createElement('div');
-imgCarousel.classList.add('imgCarousel');
-let textChantier = document.createElement('p');
-textChantier.classList.add('textChantier');
-let chantier1 = document.querySelector('#arr1');
-let chantier2 = document.querySelector('#arr2');
-let chantier3 = document.querySelector('#arr3');
-let chantier4 = document.querySelector('#arr4');
-let next = document.querySelector('#next');
-let previous = document.querySelector('#previous');
 
-let arrChantier1 = [
-  "url(public/img/chantier1_1.jpg)",
-  "url(public/img/chantier1_2.jpg)",
-  "url(public/img/chantier1_3.jpg)",
-  "url(public/img/chantier1_4.jpg)",
-  "url(public/img/chantier1_5.jpg)",
-  "url(public/img/chantier1_6.jpg)"
+///Selection de la div principale du carrousel///
+const activeImg = document.querySelector("#activeImg"),
+  img = document.querySelector("#activeImg img"),
+  buttonLeft = document.querySelector('.left'),
+  buttonRight = document.querySelector('.right');
+
+
+///bouton choix du carrousel///
+const sites = document.querySelectorAll('.site')
+
+///déclaration des tableaux contenant les images des chantiers///
+const tabSites = [];
+for (let site = 0; site < 4; site++) {
+  tabSites.push([]);
+}
+
+///ajout des photos dans chaque tableau///
+
+var sitesData = [
+  { id: 1, limit: 7 },
+  { id: 2, limit: 6 },
+  { id: 3, limit: 6 },
+  { id: 4, limit: 9 }
 ];
 
-let arrChantier2 = [
-  "url(public/img/chantier2_1.jpg)",
-  "url(public/img/chantier2_2.jpg)",
-  "url(public/img/chantier2_3.jpg)",
-  "url(public/img/chantier2_4.jpg)",
-  "url(public/img/chantier2_5.jpg)"
-];
-
-let arrChantier3 = [
-  "url(public/img/chantier3_1.jpg)",
-  "url(public/img/chantier3_2.jpg)",
-  "url(public/img/chantier3_3.jpg)",
-  "url(public/img/chantier3_4.jpg)",
-  "url(public/img/chantier3_5.jpg)"
-];
-
-let arrChantier4 = [
-  "url(public/img/chantier4_1.jpg)",
-  "url(public/img/chantier4_2.jpg)",
-  "url(public/img/chantier4_3.jpg)",
-  "url(public/img/chantier4_4.jpg)",
-  "url(public/img/chantier4_5.jpg)",
-  "url(public/img/chantier4_6.jpg)",
-  "url(public/img/chantier4_7.jpg)",
-  "url(public/img/chantier4_8.jpg)"
-];
-
+<<<<<<< HEAD
 next.before(imgCarousel);
 
 chantier1.addEventListener('click', () => {
@@ -196,5 +175,187 @@ imgAnim = (param) => {
     param.style.transform = "scaleY(1)";
   }, 90);
 };
+=======
+for ({ id, limit } of sitesData) {
+
+  for (let numImg = 1; numImg < limit; numImg++) {
+    tabSites[id - 1].push(`./public/img/chantier${id}_${numImg}.jpg`);
+  }
+
+}
+console.log(tabSites);
+
+let imgCount = 0;
+
+///Bouton de choix de chantier///
+for (let i = 0; i < 4; i++) {
+
+  sites[i].addEventListener('click', () => {
+    imgCount = 0;
+    img.setAttribute('data-id', `site${i + 1}`);
+    img.setAttribute('alt', `chantier ${i + 1}`);
+    img.classList.add('fadeIn');
+    setTimeout(() => img.src = tabSites[i][0], 200);
+    img.addEventListener('transitionend', () => {
+
+      img.classList.remove('fadeIn');
+    })
 
 
+  })
+
+}
+
+
+///boutons du carrousel///
+
+
+buttonRight.addEventListener('click', () => {
+
+  ///désactivation du bouton///
+  buttonRight.disabled = "true";
+
+  imgCount++;
+
+  switch (img.dataset.id) {
+    case "site1":
+      if (imgCount > tabSites[0].length - 1) {
+        imgCount = 0;
+      }
+
+      img.classList.add('fadeIn');
+      setTimeout(() => img.src = tabSites[0][imgCount], 200)
+
+      img.addEventListener('transitionend', () => {
+
+        img.classList.remove('fadeIn');
+
+        ///activation du bouton///
+        buttonRight.removeAttribute("disabled", "")
+
+      })
+
+      break;
+
+    case 'site2':
+      if (imgCount > tabSites[1].length - 1) {
+        imgCount = 0;
+      }
+
+      img.classList.add('fadeIn');
+      setTimeout(() => img.src = tabSites[1][imgCount], 200)
+
+      img.addEventListener('transitionend', () => {
+
+        img.classList.remove('fadeIn');
+        buttonRight.removeAttribute("disabled", "")
+      })
+      break;
+
+    case 'site3':
+      if (imgCount > tabSites[2].length - 1) {
+        imgCount = 0;
+      }
+
+      img.classList.add('fadeIn');
+      setTimeout(() => img.src = tabSites[2][imgCount], 200)
+
+      img.addEventListener('transitionend', () => {
+
+        img.classList.remove('fadeIn');
+        buttonRight.removeAttribute("disabled", "")
+      })
+      break;
+
+    case 'site4':
+      if (imgCount > tabSites[3].length - 1) {
+        imgCount = 0;
+      }
+
+      img.classList.add('fadeIn');
+      setTimeout(() => img.src = tabSites[3][imgCount], 200)
+
+      img.addEventListener('transitionend', () => {
+
+        img.classList.remove('fadeIn');
+        buttonRight.removeAttribute("disabled", "")
+      })
+      break;
+  }
+  console.log(imgCount);
+})
+
+buttonLeft.addEventListener('click', () => {
+
+  buttonLeft.disabled = "true";
+
+  imgCount--;
+
+  switch (img.dataset.id) {
+    case "site1":
+      if (imgCount < 0) {
+        imgCount = tabSites[0].length - 1;
+      }
+
+      img.classList.add('fadeIn');
+      setTimeout(() => img.src = tabSites[0][imgCount], 200)
+
+      img.addEventListener('transitionend', () => {
+
+        img.classList.remove('fadeIn');
+        buttonLeft.removeAttribute("disabled", "")
+      })
+
+      break;
+
+    case 'site2':
+      if (imgCount < 0) {
+        imgCount = tabSites[1].length - 1;
+      }
+
+      img.classList.add('fadeIn');
+      setTimeout(() => img.src = tabSites[1][imgCount], 200)
+
+      img.addEventListener('transitionend', () => {
+
+        img.classList.remove('fadeIn');
+        buttonLeft.removeAttribute("disabled", "")
+      })
+
+      break;
+
+    case 'site3':
+      if (imgCount < 0) {
+        imgCount = tabSites[2].length - 1;
+      }
+
+      img.classList.add('fadeIn');
+      setTimeout(() => img.src = tabSites[2][imgCount], 200)
+
+      img.addEventListener('transitionend', () => {
+
+        img.classList.remove('fadeIn');
+        buttonLeft.removeAttribute("disabled", "")
+      })
+
+      break;
+
+    case 'site4':
+      if (imgCount < 0) {
+        imgCount = tabSites[3].length - 1;
+      }
+
+      img.classList.add('fadeIn');
+      setTimeout(() => img.src = tabSites[3][imgCount], 200)
+
+      img.addEventListener('transitionend', () => {
+
+        img.classList.remove('fadeIn');
+        buttonLeft.removeAttribute("disabled", "")
+      })
+>>>>>>> Working
+
+      break;
+  }
+
+})

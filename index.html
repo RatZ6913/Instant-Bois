@@ -7,15 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@700&display=swap" rel="stylesheet" />
-
   <link rel="stylesheet" href="./public/css/style.css" type="text/css" />
-
-
   <link rel="stylesheet" href="./public/css/style.mobile.css" type="text/css" media="screen and (max-width:1030px)" />
-
-
   <meta name="descripion" content="Notre entreprise de charpente et couverture en bois offre des services de construction et rénovation de bâtiments en 
   bois de qualité. Nous avons une équipe de charpentiers professionnels et expérimentés. Consultez les photos de nos 
   chantiers pour découvrir notre savoir-faire en matière de charpente et de couverture en bois." />
@@ -35,7 +29,7 @@
           <li><a href="#">Accueil</a></li>
           <li><a href="#spaceAbout">Qui sommes-nous?</a></li>
           <li><a href="#spacePics">Photos</a></li>
-          <li><a href="#spaceContact">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -54,14 +48,13 @@
     <div id="cta">
       <a href="#spaceAbout"><button id="ctaButton">En savoir plus</button></a>
     </div>
-
   </header>
 
   <!-- Bloc espace pour ancre de redirection -->
   <div id="spaceAbout"></div>
   <!-- Bloc espace pour ancre de redirection -->
 
-  <article id="activité">
+  <article id="activite">
     <h3>Notre activité</h3>
     <div id="aboutWrapper">
       <div class="aboutTop">
@@ -77,7 +70,6 @@
             existantes.
           </p>
         </div>
-
 
       </div>
       <div class="aboutMid">
@@ -110,7 +102,6 @@
   <!-- PARTIE : PHOTOS  -->
   <article id="boxPics">
     <h3 id="pictures">Nos Photos de chantiers</h3>
-
     <div id="mid-page">
       <ul>
         <li class="site">Chantier n°1</li>
@@ -120,13 +111,10 @@
       </ul>
     </div>
 
-
     <!-- Carrousel -->
-
     <div id="carrousel">
       <div id="activeImg">
         <img src="./public/img/chantier1_1.jpg" data-id="site1" alt="chantier 1">
-
         <!-- Bouton de navigation -->
         <button class="left">
           <img src="./public/img/arrow_left_ios_new_FILL0_wght400_GRAD0_opsz48.svg" alt="arrow left">
@@ -135,72 +123,57 @@
           <img src="./public/img/arrow_right_ios_FILL0_wght400_GRAD0_opsz48.svg" alt="arrow right">
         </button>
         <!-- Bouton de navigation -->
-
       </div>
-
     </div>
-
   </article>
 
-  <!-- Bloc espace pour ancre de redirection -->
-  <div id="spaceContact"></div>
-  <!-- Bloc espace pour ancre de redirection -->
-
   <footer>
-    <h3>Contactez-nous</h3>
-    <div id="form">
-      <div id="logoblc"><img src="./public/img/logo-white.png" alt=""></div>
-      <form action="" method="post">
+    <section id="contact">
+      <h2>Contactez-nous</h2>
+      <h3>Par mail :</h3>
+      <a href="mailto:contact@instant-bois.fr?subject=Objet"><button id="mail">Client</button></a>
+      <a href="mailto:fournisseurs@instant-bois.fr?subject=Objet"><button id="mail">Pro</button></a>
+      <h3>Par téléphone :</h3>
+      <a href="tel:+33632035421"><button>Camille</button></a>
+      <a href="tel:+33685769308"><button>Yannick</button></a>
+    </section>
+    <section id="footer-right">
+      <div>
+        <figure>
+          <img src="./public/img/logo-white.png" alt="logo-instant-bois-blanc" loading="lazy" />
+        </figure>
+      </div>
+      <div id="boxContact">
+        <span><img src="./public/img/icone-societe.png" alt="icone-societe" /> : SARL L'INSTANT BOIS</span>
+        <span><img src="./public/img/icone-lieu.png" alt="icone-lieu" /> : ZA Entraigues</span>
+        <span><img src="./public/img/icone-postale.png" alt="icone-code-postal" /> : 05200 EMBRUM</span>
+        <span><img src="./public/img/icone-telephone.png" alt="icone-telephone" /> : Camille 06.32.03.54.21</span>
+        <span><img src="./public/img/icone-telephone.png" alt="icone-telephone" /> : Yannick 06.85.76.93.08</span>
+        <span><img src="./public/img/icone-mail.png" alt="icone-mail" /> Client : contact@instant-bois.fr</span>
+        <span><img src="./public/img/icone-mail.png" alt="icone-mail" /> Pro : fournisseurs@instant-bois.fr</span>
+      </div>
+      <div>
+        <pre>
+Cordialement 
+  LAFONT Camille</pre>
+      </div>
+    </section>
 
-        <div class="form">
-          <label for="name">Votre nom</label>
-          <input type="text" id="name" name="nom" placeholder="Votre nom" required>
-        </div>
-
-        <div class="form">
-          <label for="firstname">Votre prénom</label>
-          <input type="text" id="firstname" name="prénom" placeholder="Votre prénom" required>
-        </div>
-
-        <div class="form">
-          <label for="email">Votre e-mail</label>
-          <input type="email" id="email" name="email" placeholder="Votre e-mail" required>
-        </div>
-
-        <div class="form">
-          <label for="phone">Votre numéro de téléphone <br>(facultatif)</label>
-          <input type="tel" id="phone" name="phone" pattern="0[1-9]{1}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}"
-            placeholder="+33#-##-##-##-##" value="+33">
-        </div>
-
-        <legend class="form">Vous êtes :
-          <div class="label">
-            <div><input type="radio" id="particulier" name="customer" value="part" required>
-              <label for="particulier">un particulier</label>
-            </div>
-
-            <div><input type="radio" id="professionel" name="customer" value="pro" required>
-              <label for="professionel">un professionnel</label>
-            </div>
-          </div>
-        </legend>
-
-        <div class="form"> <label for="sujet">Quel est le sujet de votre demande?</label>
-          <select name="sujet" id="sujet" required>
-            <option value="" disabled selected hidden>Choisissez votre sujet</option>
-            <option value="rdv">Prendre un rendez-vous</option>
-            <option value="devis">Etablir un devis</option>
-            <option value="info sup">Informations supplémentaires</option>
-            <option value="autre">Autre...</option>
-          </select>
-        </div>
-
-        <div class="form"> <label for="message">Votre message</label>
-          <textarea id="message" name="message" placeholder="Ecrivez votre message ici" required></textarea>
-        </div>
-
-        <button type="submit">Envoyer</button>
-      </form>
+    <div id="mention">
+      <p>Sources : <a href="https://www.pexels.com/fr-fr/">Images</a>
+        <a href="https://icones8.fr">Icônes</a>
+      </p>
+      <p>
+        Développeurs :
+        <a href="https://github.com/PierreYEM"> YEM
+          <img src="./public/img/icon-github.png" alt="logo-github">
+        </a>
+        <a href="https://github.com">PHEAK
+          <img src="./public/img/icon-github.png" alt="logo-github">
+        </a>
+      </p>
+      <a href="./mention.html" target="_blank">Mentions Légales</a>
+      <p>Tous droits réservés ® 2022 </p>
     </div>
   </footer>
 </body>

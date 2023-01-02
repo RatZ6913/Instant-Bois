@@ -49,7 +49,6 @@ h3 {
   margin: 20px 0;
 }
 
-
 /* Header */
 header {
   height: 100vh;
@@ -99,19 +98,16 @@ li:hover {
   box-shadow: 3px -3px 1px black;
   background-color: #F9F9F9;
   transition: 0.1s ease-in-out;
-
 }
 
 li:active {
   animation: click 0.1s linear forwards;
-
 }
 
 @keyframes click {
   from {
     transform: translate(0, 0);
   }
-
   to {
     transform: translate(3px, -3px);
     box-shadow: unset;
@@ -120,14 +116,6 @@ li:active {
 
 li a {
   text-decoration: none;
-<<<<<<< refs/remotes/PierreYEM/Working
-  color: var(--color-orange);
-  padding: 0.3rem 0.8rem;
-}
-
-li a:hover {
-  color: var(--color-teal);
-=======
   color: var(--color-primary);
   background-color: var(--color-grey);
   padding: 0.3rem 0.8rem;
@@ -136,9 +124,7 @@ li a:hover {
 nav ul li a:hover {
   background-color: var(--color-grey);
   color: var(--color-orange);
->>>>>>> Update Mentions
 }
-
 
 #title {
   position: absolute;
@@ -157,8 +143,6 @@ nav ul li a:hover {
   gap: 20px;
 }
 
-
-
 /* LOGO  */
 #boxLogo {
   margin: 0;
@@ -171,19 +155,14 @@ nav ul li a:hover {
   background-color: var(--color-brown-light);
 }
 
-
 /* // ZONE DE FLOATAISON */
-
 #cta {
   position: absolute;
   top: 75%;
-
   width: 100%;
   display: flex;
   justify-content: center;
-
   text-align: right;
-
 }
 
 #ctaButton {
@@ -199,7 +178,6 @@ nav ul li a:hover {
   color: var(--color-orange);
   background-color: var(--color-teal);
   transition: 0.3s ease-in-out;
-
 }
 
 #ctaButton a,
@@ -209,24 +187,20 @@ button {
   border: none;
 }
 
-
 /* Partie : À Propos */
-
-#activité {
+#activite {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: var(--color-grey);
-
 }
 
-#activité p {
+#activite p {
+  text-align: center;
   text-align: start;
-  display: block;
-
+  margin: auto;
 }
-
 
 #aboutWrapper {
   display: flex;
@@ -245,8 +219,6 @@ button {
   align-self: flex-start;
   overflow-y: hidden;
 }
-
-
 
 .aboutMid {
   align-self: center;
@@ -274,7 +246,6 @@ button {
   text-indent: 40px;
 }
 
-
 figure {
   display: flex;
   position: relative;
@@ -286,7 +257,6 @@ figure {
 figure img {
   max-width: 100%;
 }
-
 
 /* PARTIE : PHOTOS */
 #boxPics {
@@ -301,17 +271,12 @@ figure img {
   background-color: var(--color-orangee);
 }
 
-
-
 #mid-page ul {
   display: flex;
   justify-content: space-evenly;
   padding: 0;
 }
 
-
-<<<<<<< refs/remotes/PierreYEM/Working
-=======
 #mid-page a {
   text-decoration: none;
   color: var(--color-grey);
@@ -323,7 +288,6 @@ figure img {
   background-color: var(--color-primary);
 }
 
->>>>>>> update merge
 /* PARTIE : CAROUSEL  */
 .site {
   transition: 0.5s;
@@ -362,8 +326,6 @@ figure img {
 
 }
 
-
-
 .left,
 .right {
   position: absolute;
@@ -381,7 +343,6 @@ figure img {
   left: 5%;
   transition: 0.5s;
 }
-
 
 .right:hover,
 .left:hover {
@@ -404,7 +365,6 @@ figure img {
   opacity: 0
 }
 
-
 #carrousel {
   display: flex;
   width: 80%;
@@ -412,140 +372,89 @@ figure img {
   margin: 50px 0;
 }
 
-
-
 /* PARTIE : FOOTER  */
 /* Formulaire  */
+
 footer {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 88vh;
-  background-color: var(--color-brown-light);
+  flex-direction: flex;
   flex-wrap: wrap;
+  background-color: var(--color-brown-light);
 }
 
-input {
-  border: unset;
-  width: 40%;
-  height: 100%;
-  justify-self: center;
-}
-
-fieldset {
-  height: inherit;
-}
-
-form {
-  height: 100%;
-  width: 46%;
-
-  display: flex;
-  flex-direction: column;
-  align-self: flex-end;
-  justify-content: space-around;
-  align-items: center;
-}
-
-legend {
-  text-align: top;
-  display: flex;
-  justify-content: space-between;
-}
-
-.label {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 50%;
-  font-size: 0.9rem;
-}
-
-.label input {
-  height: auto;
-}
-
-select,
-textarea {
-  width: 40%;
-}
-
-textarea {
-  height: 5vh;
-}
-
-.form {
-  display: flex;
-  height: 5%;
-  width: 60%;
-  justify-content: space-between;
-}
-
-
-
-#form {
-  height: 80%;
-  width: 90%;
-  display: flex;
-  align-items: center;
-}
-
-#logoblc {
-  width: 50%;
-  height: 100%;
-}
-
-#logoblc img {
-  max-height: 100%;
-}
-
-[type="submit"] {
-  width: 30%;
-  height: 5vh;
-  font-size: 1.5rem;
-  color: var(--color-orange);
-  background-color: var(--color-white);
-  align-self: center;
-}
-
-[type="submit"]:hover {
-  color: var(--color-teal);
-<<<<<<< refs/remotes/PierreYEM/Working
-  transform: translate(-3px, 3px);
-  box-shadow: 3px -3px 1px black;
-  transition: 0.1s ease-in-out;
-
-}
-
-<<<<<<< refs/remotes/PierreYEM/Working
-[type="submit"]:active {
-  animation: click 0.1s linear forwards;
-=======
-#mention {
-  display: flex;
-  justify-content: center;
+footer h2 {
   width: 100%;
-  font-size: 14px;
-  background-color: var(--color-teal);
-}
-
-#mention a {
   text-align: center;
-  color: var(--color-grey);
-  margin-right: 1rem;
 }
 
-<<<<<<< refs/remotes/PierreYEM/Working
-#mention p {
-  margin: 0;
-  color: var(--color-brown-light);
-  margin-right: 1rem;
->>>>>>> Update Mentions
-=======
->>>>>>> update merge
-=======
+#contact {
+  color: var(--color-orange);
+  background-color: var(--color-grey);
+  width: 35%;
+  padding-bottom: 1rem;
+}
+
+#contact h3 {
+  text-align: left;
+  margin-left: 5%;
+  margin: 0.5rem auto;
+  font-size: 18px;
+  color: var(--color-orange);
+}
+
+#contact a {
+  margin-left: 5%;
+  margin: auto;
+}
+
+footer section {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+footer button {
+  margin: 0.3rem auto;
+  width: 150px;
+  color: var(--color-grey);
+  background-color: var(--color-teal);
+  border: none;
+  cursor: pointer;
+  padding: 0.3rem 0.5rem;
+}
+
+footer button:hover {
+  background-color: var(--color-orange);
+  color: var(--color-grey);
+}
+
+/* Footer : Coordonnées */
+#footer-right {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer-right img {
+  width: 150px;
+}
+
+#footer-right div:nth-child(3) {
+  display: block;
+  width: 100%;
+}
+
+#boxContact {
+  display: flex;
+  flex-direction: column;
+  color: var(--color-primary);
+  justify-content: center;
+  font-size: 14px;
+}
+
+#boxContact span img {
+  width: 18px;
+}
+
 pre {
   color: var(--color-teal);
 }
@@ -554,13 +463,24 @@ pre {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  justify-content: center; 
-  place-self: center;
   margin: auto;
 }
 
 #mention a, p {
   margin-right: 0.5rem;
   padding-top: 0.7rem;
->>>>>>> Update Footer
+  margin: auto;
+  margin-bottom: 0.5rem;
 }
+
+#mention a {
+  color: var(--color-white);
+}
+
+#mention a:hover::after{
+  content: "Lien redirection";
+  position: absolute;
+  margin-top: -20px;
+  color: var(--color-primary);
+}
+

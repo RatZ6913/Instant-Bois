@@ -137,7 +137,7 @@ nav ul li a:hover {
 #titleWrap {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  text-align: center;
   background-color: #ffffff88;
   padding: 3rem;
   gap: 20px;
@@ -147,7 +147,8 @@ nav ul li a:hover {
 #boxLogo {
   margin: 0;
   display: unset;
-  width: 10vw;
+  width: 150px;
+  min-width: 150px;
 }
 
 #logo {
@@ -208,7 +209,7 @@ button {
   justify-content: center;
   margin: 50px 0;
   gap: 40px;
-  width: 80vw;
+  width: 80%;
 }
 
 [class^="about"] {
@@ -371,10 +372,8 @@ figure img {
 
 /* PARTIE : FOOTER  */
 /* Formulaire  */
-
 footer {
   display: flex;
-  flex-direction: flex;
   flex-wrap: wrap;
   background-color: var(--color-brown-light);
 }

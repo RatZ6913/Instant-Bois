@@ -1,6 +1,6 @@
 # Instant-Bois
 
-HTML & CSS & Javascript
+HTML & CSS & Javascript (Responsiv) (Natif)
 
 Nom du Site : L'instant Bois
 

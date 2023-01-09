@@ -113,6 +113,10 @@ img {
     margin: 0;
   }
 
+  #mid-page ul {
+    flex-wrap: wrap;
+  }
+
   .site {
     margin: 0.5rem 0;
     font-size: 16px;
@@ -133,19 +137,36 @@ img {
     background-color: transparent;
   }
 
+  nav {
+    padding: 0;
+  }
+
+  #logo {
+    width: 100%;
+  }
+
+  #boxLogo {
+    min-width:100px;
+  }
+
   nav ul {
-    flex-direction: column;
-    margin: 0.5rem;
+    width: 100%;
+    margin: 5px;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   nav ul li {
-    margin-bottom: 10px;
+    margin: 5px;
   }
 
   nav ul li a {
     background-color: var(--color-teal);
     color: var(--color-white);
-    padding: 0.3rem;
+    width: 135px;
+    padding: 0.5rem;
+    font-size: 14px;
+    text-align: center;
   }
 
   article {
@@ -182,6 +203,7 @@ img {
     height: 50vh;
   }
 
+
   footer {
     flex-direction: row;
   }
@@ -198,5 +220,15 @@ img {
   #mention p {
     margin: 0;
     padding: 0;
+  }
+}
+
+@media only screen and (max-width:431px) {
+  nav ul {
+    justify-content: flex-end;
+  }
+
+  nav ul li {
+    margin: 5px;
   }
 }

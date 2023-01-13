@@ -200,9 +200,12 @@ footer #boxContact {
     color: var(--color-teal);
   }
 
-  article {
-    display: flex;
+  #box-act {
     flex-direction: column;
+  }
+
+  .content-act {
+    width: 90%;
   }
 
   #about {

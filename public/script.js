@@ -8,7 +8,9 @@ window.addEventListener('resize', () => {
   if (window.innerWidth <= 550) {
     nav.appendChild(burgerIcon);
   } else {
-    nav.removeChild(burgerIcon);
+    if(nav.contains(burgerIcon)){
+      nav.removeChild(burgerIcon);
+    }
   }
 });
 
@@ -30,7 +32,6 @@ let arrTitleActivity = document.querySelectorAll('.title-act');
 let arrTextActivity = document.querySelectorAll('.textActivity');
 
 activityBox.forEach((element, index) => {
-  console.log(activityBox[index]);
   element.style.backgroundImage = arrImgBackground[index];
 
   element.addEventListener('mouseenter', () => {

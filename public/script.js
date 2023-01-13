@@ -18,7 +18,6 @@ burgerIcon.addEventListener('click', () => {
   menuBurger == "none" ? burger.style.display = "flex" : burger.style.display = "none";
 });
 
-
 // Partie : À PROPOS
 let activityBox = document.querySelectorAll('.content-act');
 let arrImgBackground = [

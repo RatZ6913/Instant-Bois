@@ -26,14 +26,22 @@ nav ul li a {
 footer {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align: start;
   padding-top: 1rem;
+  text-align: center;
 }
 
 footer figure,
 img {
   margin: auto;
 }
+
+footer #boxContact {
+  text-align: start;
+  margin: auto;
+}
+
+
 @media screen and (max-width: 805px) {
   nav ul li {
     margin: 5px;
@@ -72,6 +80,10 @@ img {
   #next,
   #previous {
     margin-bottom: 1rem;
+  }
+
+  footer {
+    font-size: smaller;
   }
 }
 
@@ -232,6 +244,7 @@ img {
   }
 
   #mention {
+    margin-top: 1rem;
     flex-direction: column;
   }
 

@@ -14,12 +14,15 @@ activityBox.forEach((element, index) => {
   element.style.backgroundImage = arrImgBackground[index];
 
   element.addEventListener('mouseenter', () => {
+
     element.style.background = "none";
     arrTitleActivity[index].style.display = "none";
     arrTextActivity[index].style.display = "block";
+    element.animate = "activityBox 1.5s ease"; 
   });
 
   element.addEventListener('mouseleave', () => {
+
     element.style.background = arrImgBackground[index];
     element.style.backgroundSize = "";
     arrTitleActivity[index].style.display = "";

@@ -119,6 +119,7 @@ li a {
   color: var(--color-primary);
   background-color: var(--color-grey);
   padding: 0.3rem 0.8rem;
+  box-shadow: 1px 1px 2px var(--color-teal);
 }
 
 nav ul li a:hover {
@@ -141,6 +142,8 @@ nav ul li a:hover {
   background-color: #ffffff88;
   padding: 3rem;
   gap: 20px;
+  box-shadow: 1px 1px 2px var(--color-teal);
+
 }
 
 /* LOGO  */
@@ -149,6 +152,7 @@ nav ul li a:hover {
   display: unset;
   width: 150px;
   min-width: 150px;
+  box-shadow: 1px 1px 2px var(--color-teal);
 }
 
 #logo {
@@ -196,6 +200,7 @@ button {
   margin: auto;
   width: 80%;
   background-color: var(--color-grey);
+  box-shadow: 1px 1px 2px var(--color-teal);
 }
 
 #box-act {
@@ -376,6 +381,7 @@ footer h2 {
   background-color: var(--color-grey);
   width: 35%;
   padding-bottom: 1rem;
+  box-shadow: 1px 1px 2px var(--color-teal);
 }
 
 #contact h3 {

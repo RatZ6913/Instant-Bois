@@ -16,7 +16,6 @@ window.addEventListener('resize', () => {
 
 burgerIcon.addEventListener('click', () => {
   let menuBurger =  burger.style.display;
-
   menuBurger == "none" ? burger.style.display = "flex" : burger.style.display = "none";
 });
 

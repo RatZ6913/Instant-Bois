@@ -1,3 +1,22 @@
+// MENU BURGER 
+let nav = document.querySelector('nav');
+let burger = document.querySelector('#burger');
+let burgerIcon = document.createElement('span');
+burgerIcon.classList.add('burgerIcon');
+
+window.addEventListener('load', () => {
+  if (window.innerWidth <= 550) {
+    nav.appendChild(burgerIcon);
+  }
+});
+
+burgerIcon.addEventListener('click', () => {
+  let menuBurger =  burger.style.display;
+
+  menuBurger == "none" ? burger.style.display = "flex" : burger.style.display = "none";
+});
+
+
 // Partie : À PROPOS
 let activityBox = document.querySelectorAll('.content-act');
 let arrImgBackground = [
@@ -17,7 +36,6 @@ activityBox.forEach((element, index) => {
     element.style.background = "none";
     arrTitleActivity[index].style.display = "none";
     arrTextActivity[index].style.display = "block";
-    element.animate = "activityBox 1.5s ease";
   });
 
   element.addEventListener('mouseleave', () => {
@@ -26,25 +44,6 @@ activityBox.forEach((element, index) => {
     arrTitleActivity[index].style.display = "";
     arrTextActivity[index].style.display = "";
   });
-});
-
-
-// MENU BURGER 
-let nav = document.querySelector('nav');
-let burger = document.querySelector('#burger');
-let burgerIcon = document.createElement('span');
-burgerIcon.classList.add('burgerIcon');
-
-window.addEventListener('load', () => {
-  if (window.innerWidth <= 550) {
-    nav.appendChild(burgerIcon);
-  }
-});
-
-burgerIcon.addEventListener('click', () => {
-  let menuBurger =  burger.style.display;
-
-  menuBurger == "none" ? burger.style.display = "flex" : burger.style.display = "none";
 });
 
 

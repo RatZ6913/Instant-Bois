@@ -159,30 +159,33 @@ img {
   }
 
   .burgerIcon {
-    display: flex;
     place-self: center;
     width: 50px;
     height: 55px;
     border-radius: 10px;
     background-color: var(--color-teal);
     background-image: url(../img/burger-icon.png);
-    background-size: contain;
     background-position: center;
-    background-repeat: no-repeat;
     cursor: pointer;
   }
   
   nav li:hover {
     transform: translate(0px);
-    box-shadow: 1px 2px 2px black;
+    box-shadow: 1px 2px 2px white;
     background-color: var(--color-teal);
   }
 
   nav ul li a {
-    width: 150px;
+    width: 120px;
     text-align: center;
     margin-right: 0.5rem;
     height: 2.5vh;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+  }
+
+  nav ul li a:hover {
+    color: var(--color-teal);
   }
 
   article {

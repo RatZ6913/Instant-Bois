@@ -214,11 +214,11 @@ button {
   margin: 1rem;
   border: 1px solid white;
   background-size: cover;
+  background-color: #6b3329 !important;
 }
 
 .title-act {
   display: block;
-  /* display: none; */
   background-color: #05050588;
   color: var(--color-grey);
   padding: 0.5rem;
@@ -228,9 +228,10 @@ button {
   display: block;
   display: none;
   text-align: center;
+  color: #000000;
   width: 90%;
   margin: auto;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.781);
   padding: 0.5rem;
 }
 

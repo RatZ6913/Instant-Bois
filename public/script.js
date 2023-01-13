@@ -1,10 +1,34 @@
+// Partie : À PROPOS
+let activityBox = document.querySelectorAll('.content-act');
+let arrImgBackground = [
+  "url(./public/img/activity1.jpg)",
+  "url(./public/img/activity2.jpg)",
+  "url(./public/img/activity3.jpg)"
+];
+
+let arrTitleActivity = document.querySelectorAll('.title-act');
+let arrTextActivity = document.querySelectorAll('.textActivity');
+
+activityBox.forEach((element, index) => {
+  console.log(activityBox[index]);
+  element.style.backgroundImage = arrImgBackground[index];
+
+  element.addEventListener('mouseenter', () => {
+    arrTitleActivity[index].style.display = "none";
+    arrTextActivity[index].style.display = "block";
+  });
+
+  element.addEventListener('mouseleave', () => {
+    arrTitleActivity[index].style.display = "";
+    arrTextActivity[index].style.display = "";
+  });
+});
 
 ///Selection de la div principale du carrousel///
 const activeImg = document.querySelector("#activeImg"),
   img = document.querySelector("#activeImg img"),
   buttonLeft = document.querySelector('.left'),
   buttonRight = document.querySelector('.right');
-
 
 ///bouton choix du carrousel///
 const sites = document.querySelectorAll('.site')

@@ -188,8 +188,54 @@ button {
   border: none;
 }
 
+/* PARTIE : À PROPOS  */
+#activity {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  width: 80%;
+  background-color: var(--color-grey);
+}
+
+#box-act {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 1rem;
+}
+
+.content-act {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 30vh;
+  margin: 1rem;
+  border: 1px solid white;
+  background-size: cover;
+}
+
+.title-act {
+  display: block;
+  /* display: none; */
+  background-color: #05050588;
+  color: var(--color-grey);
+  padding: 0.5rem;
+}
+
+.textActivity {
+  display: block;
+  display: none;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  background-color: white;
+  padding: 0.5rem;
+}
+
 /* Partie : À Propos */
-#activite {
+/* #activite {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -219,9 +265,10 @@ button {
   background-color: #f7f7f7;
   align-self: flex-start;
   overflow-y: hidden;
-}
+} */
 
-.aboutMid {
+/* // */
+/* .aboutMid {
   align-self: center;
 }
 
@@ -257,7 +304,7 @@ figure {
 
 figure img {
   max-width: 100%;
-}
+} */
 
 /* PARTIE : PHOTOS */
 #boxPics {

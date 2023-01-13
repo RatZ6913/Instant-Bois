@@ -4,9 +4,11 @@ let burger = document.querySelector('#burger');
 let burgerIcon = document.createElement('span');
 burgerIcon.classList.add('burgerIcon');
 
-window.addEventListener('load', () => {
+window.addEventListener('resize', () => {
   if (window.innerWidth <= 550) {
     nav.appendChild(burgerIcon);
+  } else {
+    nav.removeChild(burgerIcon);
   }
 });
 

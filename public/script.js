@@ -1,22 +1,25 @@
 // MENU BURGER 
 let nav = document.querySelector('nav');
 let burger = document.querySelector('#burger');
+burger.style.display = "flex";
 let burgerIcon = document.createElement('span');
 burgerIcon.classList.add('burgerIcon');
 
 window.addEventListener('resize', () => {
   if (window.innerWidth <= 550) {
     nav.appendChild(burgerIcon);
+    burger.style.display = "none";
   } else {
-    if(nav.contains(burgerIcon)){
+    burger.style.display = "flex";
+    if (nav.contains(burgerIcon)) {
       nav.removeChild(burgerIcon);
     }
   }
 });
 
 burgerIcon.addEventListener('click', () => {
-  let menuBurger =  burger.style.display;
-  menuBurger == "none" ? burger.style.display = "flex" : burger.style.display = "none";
+  let menuBurger = burger.style.display;
+  menuBurger == "flex" ? burger.style.display = "none" : burger.style.display = "flex";
 });
 
 // Partie : À PROPOS

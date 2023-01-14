@@ -375,6 +375,8 @@ button {
   cursor: pointer;
   background-color: var(--color-white);
   background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img-site button:hover {
@@ -396,7 +398,9 @@ img {
   align-items: center;
   margin: auto;
   width: auto;
+  height: auto;
   max-height: 50vh;
+  max-width: 90%;
 }
 
 .imgSite {

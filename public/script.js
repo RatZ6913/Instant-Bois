@@ -56,6 +56,7 @@ activityBox.forEach((element, index) => {
 let btnPrevious = document.querySelectorAll('.previous');
 let btnNext = document.querySelectorAll('.next');
 let imgSite = document.querySelectorAll('.img-site .imgSite');
+imgSite.alt
 
 let arrImgSite = [
   site1 = ["./public/img/chantier1_1.jpg",
@@ -88,26 +89,15 @@ let arrImgSite = [
   ]
 ];
 
-
-// let countImgSite = arrImgSite.length;
-// let countImgSite1 = arrImgSite[0].length;
-// let countImgSite2 = arrImgSite[1].length;
-// let countImgSite3 = arrImgSite[2].length;
-// let countImgSite4 = arrImgSite[3].length;
-
-
 imgSite.forEach((element, index) => {
 
   if (index == index) {
-    // let countSite = arrImgSite[index].length;
     let countSite = 0;
 
     btnNext[index].addEventListener('click', () => {
       countSite++;
-
       
-      if (countSite < arrImgSite[index].length ) {
-        // console.log(arrImgSite);
+      if (countSite < arrImgSite[index].length) {
         element.src = arrImgSite[index][countSite];
       } else {
         countSite = 0;

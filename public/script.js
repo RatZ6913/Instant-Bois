@@ -56,7 +56,6 @@ activityBox.forEach((element, index) => {
 let btnPrevious = document.querySelectorAll('.previous');
 let btnNext = document.querySelectorAll('.next');
 let imgSite = document.querySelectorAll('.img-site .imgSite');
-imgSite.alt
 
 let arrImgSite = [
   site1 = ["./public/img/chantier1_1.jpg",
@@ -103,7 +102,15 @@ imgSite.forEach((element, index) => {
         countSite = 0;
         element.src = arrImgSite[index][0];
       }
-    })
+    });
+
+    btnPrevious[index].addEventListener('click', (e) => {
+      countSite--;
+      if (countSite < 0) {
+        countSite = arrImgSite[index].length - 1;
+      }
+      element.src = arrImgSite[index][countSite];
+    });
   }
 });
 

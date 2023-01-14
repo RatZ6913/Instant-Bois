@@ -398,9 +398,18 @@ img {
   align-items: center;
   margin: auto;
   width: auto;
-  height: auto;
   max-height: 50vh;
   max-width: 90%;
+}
+
+.img-site:hover {
+  transition: 1s;
+  transform: scale(1.5) translate(-30%);
+}
+
+.img-site2:hover, .img-site4:hover {
+  transition: 1s;
+  transform: scale(1.5) translate(30%);
 }
 
 .imgSite {

@@ -25,9 +25,9 @@ strong {
   font-weight: unset;
 }
 
-#spaceAbout,
-#spacePics,
-#spaceContact {
+
+.whiteSpace
+ {
   height: 10vh;
 }
 

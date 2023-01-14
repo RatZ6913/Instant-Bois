@@ -498,10 +498,6 @@ footer section {
   width: 18px;
 }
 
-pre {
-  color: var(--color-teal);
-}
-
 #mention {
   display: flex;
   justify-content: space-evenly;

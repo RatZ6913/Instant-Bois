@@ -70,32 +70,29 @@ let altImgDescription = [
 ];
 
 imgSite.forEach((element, index) => {
-  if (index == index) {
-    let countSite = 0;
+  let count = 0;
 
-    btnNext[index].addEventListener('click', () => {
-      countSite++;
-      if (countSite < arrImgSite[index].length) {
-        element.src = arrImgSite[index][countSite];
-        element.setAttribute("alt", altImgDescription[index][countSite]);
-      } else {
-        countSite = 0;
-        element.src = arrImgSite[index][0];
-        element.setAttribute("alt", altImgDescription[index][countSite]);
-      }
-    });
+  btnNext[index].addEventListener('click', () => {
+    count++;
+    if (count < arrImgSite[index].length) {
+      element.src = arrImgSite[index][count];
+      element.setAttribute("alt", altImgDescription[index][count]);
+    } else {
+      count = 0;
+      element.src = arrImgSite[index][0];
+      element.setAttribute("alt", altImgDescription[index][count]);
+    }
+  });
 
-    btnPrevious[index].addEventListener('click', () => {
-      countSite--;
-      if (countSite < 0) {
-        countSite = arrImgSite[index].length - 1;
-      element.setAttribute("alt", altImgDescription[index][countSite]);
-
-      }
-      element.src = arrImgSite[index][countSite];
-      element.setAttribute("alt", altImgDescription[index][countSite]);
-    });
-  }
+  btnPrevious[index].addEventListener('click', () => {
+    count--;
+    if (count < 0) {
+      count = arrImgSite[index].length - 1;
+      element.setAttribute("alt", altImgDescription[index][count]);
+    }
+    element.src = arrImgSite[index][count];
+    element.setAttribute("alt", altImgDescription[index][count]);
+  });
 });
 
 

@@ -43,9 +43,6 @@ footer #boxContact {
 
 
 @media screen and (max-width: 805px) {
-  nav ul li {
-    margin: 5px;
-  }
   nav ul li a {
     font-size: 16px;
     padding: 0.5rem 0.2rem;
@@ -92,12 +89,8 @@ footer #boxContact {
     font-size: small;
   }
 
-  nav ul {
-    padding: 0;
-  }
-
   nav ul li {
-    margin: 1px;
+    margin: 5px;
   }
 }
 
@@ -112,8 +105,12 @@ footer #boxContact {
     width: 100px;
   }
 
-  nav ul li a {
-    padding: 0.5rem 0;
+  nav ul {
+    padding: 0;
+  }
+
+  nav ul a {
+    padding: 0;
   }
 
   .textChantier {

@@ -273,6 +273,7 @@ button {
 .pics-infos {
   width: 100%;
   display: flex;
+  min-height: 50vh;
   align-items: center;
   flex-direction: row;
   border-bottom: 5px solid var(--color-white);

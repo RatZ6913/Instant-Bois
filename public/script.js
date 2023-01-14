@@ -51,10 +51,13 @@ activityBox.forEach((element, index) => {
 });
 
 
-// PARTIE : PHOTOS 
+// PARTIE : PHOTOS ( CARROUSEL )
 
+let btnPrevious = document.querySelectorAll('.previous');
+let btnNext = document.querySelectorAll('.next');
+let imgSite = document.querySelectorAll('.imgSite');
 
-
+console.log(imgSite);
 
 
 

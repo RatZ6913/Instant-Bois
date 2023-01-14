@@ -89,27 +89,29 @@ let arrImgSite = [
 ];
 
 
-let countImgSite = arrImgSite.length;
-let countImgSite1 = arrImgSite[0].length;
-let countImgSite2 = arrImgSite[1].length;
-let countImgSite3 = arrImgSite[2].length;
-let countImgSite4 = arrImgSite[3].length;
+// let countImgSite = arrImgSite.length;
+// let countImgSite1 = arrImgSite[0].length;
+// let countImgSite2 = arrImgSite[1].length;
+// let countImgSite3 = arrImgSite[2].length;
+// let countImgSite4 = arrImgSite[3].length;
 
 
 imgSite.forEach((element, index) => {
 
   if (index == index) {
+    // let countSite = arrImgSite[index].length;
     let countSite = 0;
-    // let countSite = countImgSite;
 
     btnNext[index].addEventListener('click', () => {
       countSite++;
 
-      if (countSite < countImgSite1) {
+      
+      if (countSite < arrImgSite[index].length ) {
+        // console.log(arrImgSite);
         element.src = arrImgSite[index][countSite];
       } else {
         countSite = 0;
-        element[index].src = arrImgSite[index][countSite];
+        element.src = arrImgSite[index][0];
       }
     })
   }

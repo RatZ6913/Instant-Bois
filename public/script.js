@@ -55,13 +55,65 @@ activityBox.forEach((element, index) => {
 
 let btnPrevious = document.querySelectorAll('.previous');
 let btnNext = document.querySelectorAll('.next');
-let imgSite = document.querySelectorAll('.imgSite');
+let imgSite = document.querySelectorAll('.img-site .imgSite');
 
-console.log(imgSite);
+let arrImgSite = [
+  site1 = ["./public/img/chantier1_1.jpg",
+    "./public/img/chantier1_2.jpg",
+    "./public/img/chantier1_3.jpg",
+    "./public/img/chantier1_4.jpg",
+    "./public/img/chantier1_5.jpg",
+    "./public/img/chantier1_6.jpg"
+  ],
+  site2 = ["./public/img/chantier2_1.jpg",
+    "./public/img/chantier2_2.jpg",
+    "./public/img/chantier2_3.jpg",
+    "./public/img/chantier2_4.jpg",
+    "./public/img/chantier2_5.jpg"
+  ],
+  site3 = ["./public/img/chantier3_1.jpg",
+    "./public/img/chantier3_2.jpg",
+    "./public/img/chantier3_3.jpg",
+    "./public/img/chantier3_4.jpg",
+    "./public/img/chantier3_5.jpg"
+  ],
+  site4 = ["public/img/chantier4_1.jpg",
+    "public/img/chantier4_2.jpg",
+    "public/img/chantier4_3.jpg",
+    "public/img/chantier4_4.jpg",
+    "public/img/chantier4_5.jpg",
+    "public/img/chantier4_6.jpg",
+    "public/img/chantier4_7.jpg",
+    "public/img/chantier4_8.jpg"
+  ]
+];
 
 
+let countImgSite = arrImgSite.length;
+let countImgSite1 = arrImgSite[0].length;
+let countImgSite2 = arrImgSite[1].length;
+let countImgSite3 = arrImgSite[2].length;
+let countImgSite4 = arrImgSite[3].length;
 
 
+imgSite.forEach((element, index) => {
+
+  if (index == index) {
+    let countSite = 0;
+    // let countSite = countImgSite;
+
+    btnNext[index].addEventListener('click', () => {
+      countSite++;
+
+      if (countSite < countImgSite1) {
+        element.src = arrImgSite[index][countSite];
+      } else {
+        countSite = 0;
+        element[index].src = arrImgSite[index][countSite];
+      }
+    })
+  }
+});
 
 
 
